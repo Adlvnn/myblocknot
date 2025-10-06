@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-
+     "github.com/fatih/color"
 	"strconv"
 )
 
@@ -17,7 +17,7 @@ type Books struct {
 }
 
 func (b Blocknot) String() string {
-	return fmt.Sprintf("Ваша книга %s удачно добавлена в архив.", b.Head)
+	return color.GreenString("Ваша книга %s удачно добавлена в архив.", b.Head)
 }
 
 func (b *Books) AddBook(book Blocknot) {
