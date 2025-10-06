@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-     "github.com/fatih/color"
 	"strconv"
+
+	"github.com/fatih/color"
 )
 
 type Blocknot struct {
@@ -17,7 +18,7 @@ type Books struct {
 }
 
 func (b Blocknot) String() string {
-	return color.GreenString("Ваша книга %s удачно добавлена в архив.", b.Head)
+	return color.GreenString("Нааааашаааа книга %s удачно добавлена в архив.", b.Head)
 }
 
 func (b *Books) AddBook(book Blocknot) {
